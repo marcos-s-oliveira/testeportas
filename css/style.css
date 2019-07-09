@@ -1,0 +1,17 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
+.page-title{
+    margin: auto !important;
+}
+
+.form-container{
+    width: 60%;
+    border: 1px #028FFF solid;
+    border-radius: 9px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center !important;
+}
