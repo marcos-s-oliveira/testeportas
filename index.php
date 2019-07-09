@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
     <head>
         <title>Teste Portas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        
-    
-
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery.mask.min.js"></script>

@@ -5,7 +5,6 @@
 
     });
 
-
     function ipValue(addr){
         let part = addr.split(".");
         part.forEach(mensagem);
@@ -20,7 +19,6 @@
         }
         
     }
-
 
     function testaPorta(ip,porta) {
         let url = "src/port.php?ip="+ip+"&porta="+porta;
