@@ -1,4 +1,6 @@
-
+<?php
+$addr = $_SERVER['REMOTE_ADDR'];
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,7 +22,9 @@
     <div class="container">
     
     <div class="form-container">
-    <h2 class="page-title">Teste de portas abertas</h2>
+    <center><h2 class="page-title">Teste de portas abertas</h2>
+            <h6 class="page-title">Seu IP é: <a><?php echo $addr;?></a></h6>
+    </center>
 
     <form id="form">
 
@@ -29,7 +33,7 @@
             <div class="input-group-prepend">
                 <div class="input-group-text"><i class="fa fa-network-wired"></i></div>
             </div>
-            <input type="text" class="form-control" id="ip" placeholder="Endereço Ip" onkeyup="ipValue(this.value)" autofocus required>
+            <input type="text" class="form-control" id="ip" placeholder="Endereço Ip" onkeyup="ipValue(this.value)" value="<?php echo $addr;?>" autofocus required>
         </div>
         <div class="msg" id="ipMsg"></div>
 
@@ -40,12 +44,25 @@
             </div>
             <input type="text" class="form-control" id="porta" placeholder="Porta TCP" required>
         </div>
-
     </form>    
-    <a href="#" onclick="if(ip.value !== 0){testaPorta(ip.value,porta.value);}else{form.submit();}"><button class="btn btn-block btn-primary" >Testar</button></a>
-    <div class="msg" id="Msg"></div>
+    <a href="#" onclick="if(ip.value !== ''){testaPorta(ip.value,porta.value);}else{form.submit();}"><button class="btn btn-block btn-primary" >Testar</button></a>
+    <center><div class="msg" id="Msg"></div></center>
     </div>
     </div>
+    <hr>
+    <div class="container" style="background-color: #FFF; border-radius: 6px">
+        <p>Abaixo as principais portas de seu servidor ou roteador para verificar se estão abertas ou fechadas:</p>
+        <table class="table table-stripped">
+        <thead>
+        <tr><td>FTP</td><td>SSH</td><td>Telnet</td><td>SMTP</td><td>DNS</td><td>HTTP</td><td>POP3</td><td>SQL</td><td>HTTPS</td><td>SMB</td><td>SMTP</td><td>MySQL</td></tr>
+        </thead>
+        <tbody>
+        <tr><td>21</td><td>22</td><td>23</td><td>25</td><td>53</td><td>80</td><td>110</td><td>156</td><td>443</td><td>445</td><td>465/587</td><td>3306</td></tr>
+        </tbody>
+    </table>
+    </div>
+   <hr>
+   <br><br><br>
 <div class="footer"><small>
     <p class="copyright">&copy; 2019 <a href="http://prismasolutions.com.br">Prisma Solutions</a> Versão 1.0.2 </p>
     <p class="footer-img-copyright">Background By <a href="https://pixabay.com" target="_blank">Pixabay</a></p>

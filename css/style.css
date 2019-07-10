@@ -14,18 +14,17 @@ body{
 
     background-image: url("../img/bg.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 150%
 }
 
 .page-title{
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     font-weight: bold;
     color: #FFF;
 }
 .msg{
-    margin-left: 10%;
     margin-bottom: 5%;
     color: #FFF;
 }
@@ -50,6 +49,9 @@ body{
     background: linear-gradient(45deg,  #2700b7 0%,#006edd 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2700b7', endColorstr='#006edd',GradientType=1 );
     opacity: .9;
+}
+.container p, td{
+    color: #006edd;
 }
 .footer{
     width: 100%;
@@ -85,7 +87,7 @@ body{
     width: 1.75em;
     height: 1.75em;
     padding: .25em;
-    color: #6e6e6e;
+    color: #F9F9F9;
 }
 
 .ios-spinner-blade {
@@ -96,7 +98,7 @@ body{
     background: currentColor;
     border-radius: .05em;
     transform-origin: 50% .625em;
-    opacity: .2;
+    opacity: .1;
     animation: spinner-blade-opacity 960ms infinite;
 }
 
@@ -165,6 +167,6 @@ body{
         opacity: 1;
     }
     to {
-        opacity: .8;
+        opacity: .3;
     }
 }
