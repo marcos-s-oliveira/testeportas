@@ -1,17 +1,170 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+body{
+    height: 150%;
+    margin: 0;
+}
+
+.input-group{
+    margin-bottom: 10% !important;
+}
+.btn{
+    margin-bottom: 10% !important;
+}
+.bg {
+
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%
+}
 
 .page-title{
-    margin: auto !important;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #FFF;
+}
+.msg{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: #FFF;
 }
 
 .form-container{
-    width: 60%;
+    background-color: aliceblue;
+    width: 65%;
     border: 1px #028FFF solid;
     border-radius: 9px;
     margin: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-top: 10px;
     padding-bottom: 10px;
     align-content: center !important;
+    -webkit-box-shadow: 1px 0px 23px 5px rgba(0,55,219,1);
+    -moz-box-shadow: 1px 0px 23px 5px rgba(0,55,219,1);
+    box-shadow: 1px 0px 23px 5px rgba(0,55,219,1);
+    background: #2700b7;
+    background: -moz-linear-gradient(45deg,  #2700b7 0%, #006edd 100%);
+    background: -webkit-linear-gradient(45deg,  #2700b7 0%,#006edd 100%);
+    background: linear-gradient(45deg,  #2700b7 0%,#006edd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2700b7', endColorstr='#006edd',GradientType=1 );
+    opacity: .9;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #6e6e6e;
+    color: #FFF;
+    text-align: left;
+}
+.footer-img-copyright{
+    margin-left: 85%;
+}
+.footer a{
+    color: #FFF;
+}
+.footer a :hover{
+    text-decoration: none;
+}
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+}
+
+
+
+.ios-spinner {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    width: 1.75em;
+    height: 1.75em;
+    padding: .25em;
+    color: #6e6e6e;
+}
+
+.ios-spinner-blade {
+    position: absolute;
+    width: .125em;
+    height: .3125em;
+    margin-left: -.0625em;
+    background: currentColor;
+    border-radius: .05em;
+    transform-origin: 50% .625em;
+    opacity: .2;
+    animation: spinner-blade-opacity 960ms infinite;
+}
+
+.ios-spinner-blade:nth-child(2) {
+    transform: rotateZ(30deg);
+    animation-delay: 80ms;
+}
+
+.ios-spinner-blade:nth-child(3) {
+    transform: rotateZ(60deg);
+    animation-delay: 160ms;
+}
+
+.ios-spinner-blade:nth-child(4) {
+    transform: rotateZ(90deg);
+    animation-delay: 240ms;
+}
+
+.ios-spinner-blade:nth-child(5) {
+    transform: rotateZ(120deg);
+    animation-delay: 320ms;
+}
+
+.ios-spinner-blade:nth-child(6) {
+    transform: rotateZ(150deg);
+    animation-delay: 400ms;
+}
+
+.ios-spinner-blade:nth-child(7) {
+    transform: rotateZ(180deg);
+    animation-delay: 480ms;
+}
+
+.ios-spinner-blade:nth-child(8) {
+    transform: rotateZ(210deg);
+    animation-delay: 560ms;
+}
+
+.ios-spinner-blade:nth-child(9) {
+    transform: rotateZ(240deg);
+    animation-delay: 640ms;
+}
+
+.ios-spinner-blade:nth-child(10) {
+    transform: rotateZ(270deg);
+    animation-delay: 720ms;
+}
+
+.ios-spinner-blade:nth-child(11) {
+    transform: rotateZ(300deg);
+    animation-delay: 800ms;
+}
+
+.ios-spinner-blade:nth-child(12) {
+    transform: rotateZ(330deg);
+    animation-delay: 880ms;
+}
+
+.ios-spinner-blade:nth-child(13) {
+    transform: rotateZ(360deg);
+    animation-delay: 960ms;
+}
+
+@keyframes spinner-blade-opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .8;
+    }
 }

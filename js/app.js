@@ -21,6 +21,20 @@
     }
 
     function testaPorta(ip,porta) {
+        document.getElementById("Msg").innerHTML="<center><div class=\"ios-spinner\">\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "  <div class=\"ios-spinner-blade\"></div>\n" +
+            "</div></center>";
         let url = "src/port.php?ip="+ip+"&porta="+porta;
             $.getJSON(url, function(json) {
                 if(json.status == "open"){
@@ -42,5 +56,7 @@
             });
         
         }
+
+
 
     
