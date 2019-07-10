@@ -44,8 +44,10 @@
                 }
                 
                 if (ip) {
-                    if(ip == "127.0.0.1"){
-                        document.getElementById("Msg").innerHTML="<b> 403 </b> Forbiden";    
+                    if(ip.match(/127./)){
+                        if(!ip.match(/.127./)){
+                            document.getElementById("Msg").innerHTML="<b> 403 </b> Forbiden";
+                        }
                     }else{
                         document.getElementById("Msg").innerHTML="A Porta <b>"+porta+"</b> do Servidor <b>"+ip+" </b>Está "+status;    
                     }

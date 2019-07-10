@@ -21,7 +21,8 @@
     
     <div class="form-container">
     <h2 class="page-title">Teste de portas abertas</h2>
-    <form>
+
+    <form id="form">
 
         <label class="sr-only" for="inlineFormInputGroupUsername2">Endereço Ip</label>
         <div class="input-group mb-2 mr-sm-2">
@@ -41,7 +42,7 @@
         </div>
 
     </form>    
-    <a href="#" onclick="testaPorta(ip.value,porta.value);"><button class="btn btn-block btn-primary" >Testar</button></a>
+    <a href="#" onclick="if(ip.value !== 0){testaPorta(ip.value,porta.value);}else{form.submit();}"><button class="btn btn-block btn-primary" >Testar</button></a>
     <div class="msg" id="Msg"></div>
     </div>
     </div>
